@@ -1,6 +1,6 @@
 html, button, input, select, textarea,
 .pure-g [class*="pure-u"] {
-  font-family: 'Nunito Sans', 'Pontano Sans', monospace;
+  font-family: 'Nunito Sans', 'Pontano Sans', sans-serif;
   color: #564e4e;
 }
 
