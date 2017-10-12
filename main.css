@@ -1,0 +1,230 @@
+html, button, input, select, textarea,
+.pure-g [class*="pure-u"] {
+  font-family: 'Nunito Sans', 'Pontano Sans', monospace;
+  color: #564e4e;
+}
+
+body {
+  background-color: #eaeaea;
+}
+
+a {
+  /*color: #e87070;*/
+  /*color: #ce5858;*/
+  color: #c74e4e;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a.internal-link {
+  /*color: #03c7c2;*/
+  color: #bd2121;
+  font-weight: bold;
+
+}
+
+
+#top {
+  /*background-color: #bbb;*/
+  /*background-color: #adadad;*/
+  background-color: #eaeaea;
+  padding: 20px;
+  /*font-family: initial;*/
+}
+
+#about {
+  margin: 30px auto;
+  /*border: 1px solid black;*/
+  max-width: 707px;
+  display: flex;
+  /*flex-wrap: wrap;*/
+  flex-direction: row;
+  align-items: center;
+  /*font-family: inherit;*/
+}
+
+#photo {
+  width: 200px;
+  height: 223px;
+  border: 2px solid white;
+  flex-grow: 0;
+  flex-shrink: 0;
+  border-radius: 100px;
+}
+
+#description {
+  /*border: 1px solid blue;*/
+  flex-grow: 1;
+  padding-left: 25px;
+/*  max-width: 400px;
+  min-width: 200px;*/
+  /*font-family: inherit;*/
+}
+
+/* pure-hidden-xs */
+@media screen and (max-width: 567px) {
+  .pure-visible-sm {
+    display: none; }
+  .pure-visible-md {
+    display: none; }
+  .pure-visible-lg {
+    display: none; }
+  .pure-visible-xl {
+    display: none; }
+  .pure-hidden-xs {
+    display: none; } }
+
+/* pure-hidden-sm */
+@media screen and (min-width: 568px) and (max-width: 767px) {
+  .pure-visible-xs {
+    display: none; }
+  .pure-visible-md {
+    display: none; }
+  .pure-visible-lg {
+    display: none; }
+  .pure-visible-xl {
+    display: none; }
+  .pure-hidden-sm {
+    display: none; } }
+
+/* pure-hidden-md */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .pure-visible-xs {
+    display: none; }
+  .pure-visible-sm {
+    display: none; }
+  .pure-visible-lg {
+    display: none; }
+  .pure-visible-xl {
+    display: none; }
+  .pure-hidden-md {
+    display: none; } }
+
+/* pure-hidden-lg */
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .pure-visible-xs {
+    display: none; }
+  .pure-visible-sm {
+    display: none; }
+  .pure-visible-md {
+    display: none; }
+  .pure-visible-xl {
+    display: none; }
+  .pure-hidden-lg {
+    display: none; } }
+
+/* pure-hidden-xl */
+@media screen and (min-width: 1280px) {
+  .pure-visible-xs {
+    display: none; }
+  .pure-visible-sm {
+    display: none; }
+  .pure-visible-md {
+    display: none; }
+  .pure-visible-lg {
+    display: none; }
+  .pure-hidden-xl {
+    display: none; } }
+
+
+
+
+/*Navbar*/
+#nav {
+  /*border: 1px solid #564e4e;*/
+}
+
+.pure-menu {
+  color: #564e4e;
+}
+
+.pure-menu-item, .pure-menu-link {
+  color: inherit;
+}
+
+.pure-menu-link:hover {
+  background-color: #fbfbfb;
+}
+
+.custom-wrapper {
+    /*background-color: #ffd390;*/
+    margin-bottom: 1em;
+/*    -webkit-font-smoothing: antialiased;*/
+    height: 2.1em;
+    overflow: hidden;
+    -webkit-transition: height 0.5s;
+    -moz-transition: height 0.5s;
+    -ms-transition: height 0.5s;
+    transition: height 0.5s;
+}
+
+.custom-wrapper.open {
+    height: 14em;
+}
+
+.custom-toggle {
+    width: 34px;
+    height: 34px;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 12px;
+    /*margin-right: -50;*/
+    display: none;
+}
+
+.custom-toggle .bar {
+    background-color: #564e4e;
+    display: block;
+    width: 20px;
+    height: 2px;
+    border-radius: 100px;
+    position: absolute;
+    top: 22px;
+    right: 10px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.custom-toggle .bar:first-child {
+    -webkit-transform: translateY(-6px);
+    -moz-transform: translateY(-6px);
+    -ms-transform: translateY(-6px);
+    transform: translateY(-6px);
+}
+
+.custom-toggle.x .bar {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.custom-toggle.x .bar:first-child {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.custom-brand {
+  padding-right: 200px;
+  color: inherit;
+}
+
+@media (max-width: 47.999em) {
+
+    .custom-menu-3 {
+        text-align: left;
+    }
+
+    .custom-toggle {
+        display: block;
+    }
+
+}
