@@ -6,6 +6,7 @@ html, button, input, select, textarea,
 
 body {
   background-color: #eaeaea;
+  font-size: 12pt;
 }
 
 a {
