@@ -51,17 +51,17 @@ map.on('load', function() {
     // Specify the source for the map layers
     map.addSource('state', {
         'type': 'vector',
-        'url': 'mapbox://mfincker.dmslrrc4'
+        'url': 'mapbox://mfincker.5a5pwuuf'
     });
   
     map.addSource('county', {
         'type': 'vector',
-        'url': 'mapbox://mfincker.4xsevgwl'
+        'url': 'mapbox://mfincker.6cry8xr7'
     });
   
     map.addSource('tract', {
         'type': 'vector',
-        'url': 'mapbox://mfincker.be0m0y5g'
+        'url': 'mapbox://mfincker.8wiiisxj'
     });
 
     // Add layers,
@@ -79,10 +79,9 @@ map.on('load', function() {
                 property: 'white_percent',
                 stops: color_scale,
             },
-            'fill-opacity': 0.75,
-            'fill-outline-color': '#acb1bb'
+            'fill-opacity': 0.75
         }
-    }, 'waterway-label');
+    }, 'border-admin-3-4');
 
     // County
     map.addLayer({
@@ -99,7 +98,7 @@ map.on('load', function() {
             'fill-opacity': 0.7,
             'fill-outline-color': '#acb1bb'
         }
-    }, 'waterway-label');
+    }, 'border-admin-3-4');
 
     // Tract
     map.addLayer({
@@ -116,7 +115,7 @@ map.on('load', function() {
             'fill-opacity': 0.65,
             'fill-outline-color': '#acb1bb'
         }
-    }, 'waterway-label');
+    }, 'border-admin-3-4');
 
 
 });
