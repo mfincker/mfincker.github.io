@@ -4,14 +4,20 @@ html, button, input, select, textarea,
   color: #564e4e;
 }
 
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
 body {
-  background-color: #eaeaea;
+  background-color: #d8d6d6;
   font-size: 12pt;
+  height: 100%;
+  width: 100%;
+  position: relative;
 }
 
 a {
-  /*color: #e87070;*/
-  /*color: #ce5858;*/
   color: #c74e4e;
   text-decoration: none;
 }
@@ -21,30 +27,46 @@ a:hover {
 }
 
 a.internal-link {
-  /*color: #03c7c2;*/
   color: #bd2121;
   font-weight: bold;
-
 }
 
+.active {
+  text-decoration: underline;
+}
 
-#top {
-  /*background-color: #bbb;*/
-  /*background-color: #adadad;*/
+/**********************************/
+/************** MAIN **************/
+/**********************************/
+
+#main-container {
   background-color: #eaeaea;
-  padding: 20px;
-  /*font-family: initial;*/
+  max-width: 800px;
+  min-height: 100%;
+  margin: 0 auto;
+  padding: 10px 20px;
+  position: relative;
+}
+
+/**********************************/
+
+
+
+/*********************************/
+/************* JUMBO *************/
+/*********************************/
+
+
+#top, #gallery {
+  padding: 15px;
 }
 
 #about {
   margin: 30px auto;
-  /*border: 1px solid black;*/
   max-width: 707px;
   display: flex;
-  /*flex-wrap: wrap;*/
   flex-direction: row;
   align-items: center;
-  /*font-family: inherit;*/
 }
 
 #photo {
@@ -57,13 +79,71 @@ a.internal-link {
 }
 
 #description {
-  /*border: 1px solid blue;*/
   flex-grow: 1;
   padding-left: 25px;
-/*  max-width: 400px;
-  min-width: 200px;*/
-  /*font-family: inherit;*/
 }
+
+/*********************************/
+
+
+
+
+/**********************************/
+/************* FOOTER *************/
+/**********************************/
+
+
+#bottom {
+  position: absolute;
+  width: 100%;
+  font-size: 9pt;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  padding-bottom: 25px;
+  /*background: rgba(250, 250, 250, 0.5);*/
+}
+
+#bottom p {
+  margin-bottom: 2px;
+}
+
+#bottom ul {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin-top: 0px;
+}
+
+#bottom ul li {
+  list-style: none;
+  padding: 0px 5px;
+}
+
+#bottom a {
+  color: #564e4e;
+}
+/**********************************/
+
+
+
+/***********************************/
+/********* PROJECT GALLERY *********/
+/***********************************/
+
+
+
+
+
+/***********************************/
+
+
+/**********************************/
+/************** PURE **************/
+/**********************************/
+
 
 /* pure-hidden-xs */
 @media screen and (max-width: 567px) {
@@ -131,13 +211,6 @@ a.internal-link {
     display: none; } }
 
 
-
-
-/*Navbar*/
-#nav {
-  /*border: 1px solid #564e4e;*/
-}
-
 .pure-menu {
   color: #564e4e;
 }
@@ -147,7 +220,7 @@ a.internal-link {
 }
 
 .pure-menu-link:hover {
-  background-color: #fbfbfb;
+  background-color: transparent;
 }
 
 .custom-wrapper {
