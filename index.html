@@ -8,38 +8,16 @@
     <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-min.css">
     <link rel="stylesheet" href="main.css">
     <!-- <link href='http://fonts.googleapis.com/css?family=Pontano Sans' rel='stylesheet'> -->
-    <link href='http://fonts.googleapis.com/css?family=Nunito Sans' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Nunito Sans' rel='stylesheet'>
   </head>
   <body>
     <div id="main-container">
-      <!-- Navbar -->
-<!--       <div id="nav" class="pure-g">
-        <div class="custom-wrapper pure-g" id="menu">
-          <div class="pure-u-1 pure-u-md-1-3">
-            <div class="pure-menu">
-              <a href="#" class="pure-menu-heading custom-brand active">Maeva Fincker</a>
-              <a href="#" class="custom-toggle" id="toggle"><s class="bar"></s><s class="bar"></s></a>
-            </div>
-          </div>
-          <div class="pure-u-1 pure-u-md-1-3">
-            <div class="pure-menu pure-menu-horizontal custom-can-transform">
-              <ul class="pure-menu-list">
-                <li class="pure-menu-item"><a href="#" class="pure-menu-link">Research</a></li>
-                <li class="pure-menu-item"><a href="projects/index.html" class="pure-menu-link">Vis projects</a></li>
-                <li class="pure-menu-item"><a href="files/Resume_MaevaFincker.pdf" class="pure-menu-link">Resume</a></li>
-                <!-- <li class="pure-menu-item"><a href="#" class="pure-menu-link">CV</a></li> -->
-                <!-- <li class="pure-menu-item"><a href="#" class="pure-menu-link">Millie the Microbe</a></li> -->
-<!--               </ul>
-            </div>
-          </div>
-        </div>
-      </div> --> 
-      <!-- Non-mobile about -->
+      `
       <div class="pure-g">
         <div id="top" class="pure-u-1">
           <div id="about" class="pure-g">
             <div class="pure-u-1 pure-u-md-1-4" id="photo">
-              <img src="files/headshot_300.JPG" alt="soot"/>
+              <img src="files/headshot_300.JPG" alt="Maeva_picture"/>
               <a href="files/Resume_MaevaFincker_Aug2019_noNum.pdf">Resume</a>
               <a href="https://www.linkedin.com/in/maeva-fincker-91568563/">LinkedIn</a>
               <a href="https://github.com/mfincker">GitHub</a>
@@ -57,78 +35,61 @@
               <p>
                 Before joining the Spormann lab, I graduated from the <a href="http://www.centralesupelec.fr/">Ecole Centrale Paris</a>, one of the top French Engineering School, in 2012, and obtained a M.S. in Environmental Engineering from <a href="https://cee.stanford.edu/">Stanford University</a> in 2013.
               </p>
-
               <h1>Projects</h1>
-
               <div id ="projects" class="pure-g">
-            <div class="project pure-u-1 pure-u-sm-1-3">
-              <div class="div-95">
-              <h3>Interactive map of California</h3>
-              
-               <a href="#"><img src="files/cal_map.jpg" alt="california_map" class="vignette"></a>
-                <p>Switch between population density or ethnicity at different administrative level based on zoom.</p>
-                <p><a href="#">Live map</a> - <a href="#">Github</a></p>
+                <div class="project pure-u-1 pure-u-sm-1-3">
+                  <div class="div-95">
+                    <h3>Interactive map of California</h3>
+                    
+                    <a href="#"><img src="files/cal_map.jpg" alt="california_map" class="vignette"></a>
+                    <p>Switch between population density or ethnicity at different administrative level based on zoom.</p>
+                    <p><a href="#">Live map</a> - <a href="#">Github</a></p>
+                  </div>
                 </div>
-            </div>
-
-            <div class="project pure-u-1 pure-u-sm-1-3">
-              <div class="div-95">
-              <h3>Step-by-step tutorial to build an interactive map</h3>
-              <a href="#"><img src="files/interactive_map.jpg" alt="interactive_map" class="vignette"></a>
-              <p>Follow this tutorial to build your own interactive map with MapBox GL.</p>
-              <p><a href="#">Start here</a> - <a href="#">Github</a></p>
+                <div class="project pure-u-1 pure-u-sm-1-3">
+                  <div class="div-95">
+                    <h3>Step-by-step tutorial to build an interactive map</h3>
+                    <a href="#"><img src="files/interactive_map.jpg" alt="interactive_map" class="vignette"></a>
+                    <p>Follow this tutorial to build your own interactive map with MapBox GL.</p>
+                    <p><a href="#">Start here</a> - <a href="#">Github</a></p>
+                  </div>
+                </div>
+                <div class="project pure-u-1 pure-u-sm-1-3">
+                  <div class="div-95">
+                    <h3>Predicting bacterial growth rate from functional genes</h3>
+                    <a href="#"><img src="files/growth_rate.jpg" alt="growth_rate_pca" class="vignette"></a>
+                    <p>Use the presence of functional genes to estimate how fast a microorganism grows.</p>
+                    <p><a href="#">Poster</a> - <a href="#">Github</a></p>
+                  </div>
+                </div>
+                <div class="project pure-u-1 pure-u-sm-1-3">
+                  <div class="div-95">
+                    <h3>Predicting readmision to the ER within 48h of discharge with EHR data</h3>
+                    <a href="#"><img src="files/ehr_model.jpg" alt="EHR_RNN" class="vignette"></a>
+                    <p>Train and compare the accuracy of dense neural networks, recurrent neural networks and traditional classifiers on this task.</p>
+                    <p><a href="#">Poster</a> - <a href="#">Github</a></p>
+                  </div>
+                </div>
+                
+                <div class="project pure-u-1 pure-u-sm-1-3">
+                  <div class="div-95">
+                    <h3>Visualizing the link between operon structure and sequence similarity for different classes of enzymes</h3>
+                    <a href="#"><img src="files/operon_heatmap.jpg" alt="operon_heatmap" class="vignette"></a>
+                    <p>Investigate the link between the operon structure and sequence similarity of formate dehydrogenases and methylenetetrahydrofolate reductases.</p>
+                    <p><a href="#">Try it</a> - <a href="#">Github</a></p>
+                  </div>
+                </div>
               </div>
-            </div> 
-
-            <div class="project pure-u-1 pure-u-sm-1-3">
-              <div class="div-95">
-              <h3>Predicting bacterial growth rate from functional genes</h3>
-              <a href="#"><img src="files/growth_rate.jpg" alt="growth_rate_pca" class="vignette"></a>
-              <p>Use the presence of functional genes to estimate how fast a microorganism grows.</p>
-              <p><a href="#">Poster</a> - <a href="#">Github</a></p>
-              </div>
-            </div>  
-
-            <div class="project pure-u-1 pure-u-sm-1-3">
-              <div class="div-95">
-              <h3>Predicting readmision to the ER within 48h of discharge with EHR data</h3>
-              <a href="#"><img src="files/ehr_model.jpg" alt="EHR_RNN" class="vignette"></a>
-              <p>Train and compare the accuracy of dense neural networks, recurrent neural networks and traditional classifiers on this task.</p>
-              <p><a href="#">Poster</a> - <a href="#">Github</a></p>
-
-              </div>
-            </div>
-            
-            <div class="project pure-u-1 pure-u-sm-1-3">
-              <div class="div-95">
-              <h3>Visualizing the link between operon structure and sequence similarity for different classes of enzymes</h3>
-              <a href="#"><img src="files/operon_heatmap.jpg" alt="operon_heatmap" class="vignette"></a>
-              <p>Investigate the link between the operon structure and sequence similarity of formate dehydrogenases and methylenetetrahydrofolate reductases.</p>
-              <p><a href="#">Try it</a> - <a href="#">Github</a></p>
-              </div>
-            </div>           
-
-          </div>
             </div>
           </div>
-
           
-          </div>
-
+        </div>
         <div id="bottom" class="pure-u-1">
           <p>&copy; Maeva Fincker, 2019</p>
-          <!-- <ul> -->
-<!--             <li><a href="#">LinkedIn</a></li>
-            <li><a href="#">Twitter</a></li> -->
-            <!-- <li><a href="https://github.com/mfincker">Github</a></li> -->
-          <!-- </ul> -->
-        </div>
-
-
         </div>
       </div>
-
     </div>
-    <script src="main.js"></script>
-  </body>
+  </div>
+  <script src="main.js"></script>
+</body>
 </html>
