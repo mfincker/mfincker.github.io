@@ -31,6 +31,11 @@ a.internal-link {
   font-weight: bold;
 }
 
+a em {
+  font-weight: bold;
+  font-style: normal;
+}
+
 .active {
   text-decoration: underline;
 }
@@ -70,7 +75,7 @@ h3 {
   padding: 15px;
 }
 
-#about {
+#content {
   /*margin: 0px auto;*/
   /*max-width: 800px;*/
   display: flex;
@@ -89,11 +94,11 @@ h3 {
 
 #photo img {
   width: 80%;
-  max-width: 300px;
+  max-width: 250px;
   border: 3px solid white;
   flex-grow: 0;
   /*flex-shrink: 0;*/
-  border-radius: 100px;
+  border-radius: 250px;
   /*margin: 0px auto;*/
   /*margin-top: 20px;*/
   margin: 20px auto;
@@ -110,6 +115,15 @@ h3 {
 
 /*********************************/
 
+
+#papers a {
+  color: #564e4e;
+}
+
+#papers a:hover {
+  color: #c74e4e;
+  text-decoration: underline;
+}
 /************************************/
 /************* PROJECTS *************/
 /************************************/
