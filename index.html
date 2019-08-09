@@ -13,7 +13,7 @@
   <body>
     <div id="main-container">
       <!-- Navbar -->
-      <div id="nav" class="pure-g">
+<!--       <div id="nav" class="pure-g">
         <div class="custom-wrapper pure-g" id="menu">
           <div class="pure-u-1 pure-u-md-1-3">
             <div class="pure-menu">
@@ -24,48 +24,110 @@
           <div class="pure-u-1 pure-u-md-1-3">
             <div class="pure-menu pure-menu-horizontal custom-can-transform">
               <ul class="pure-menu-list">
-                <!-- <li class="pure-menu-item"><a href="#" class="pure-menu-link">Research</a></li> -->
+                <li class="pure-menu-item"><a href="#" class="pure-menu-link">Research</a></li>
                 <li class="pure-menu-item"><a href="projects/index.html" class="pure-menu-link">Vis projects</a></li>
                 <li class="pure-menu-item"><a href="files/Resume_MaevaFincker.pdf" class="pure-menu-link">Resume</a></li>
                 <!-- <li class="pure-menu-item"><a href="#" class="pure-menu-link">CV</a></li> -->
                 <!-- <li class="pure-menu-item"><a href="#" class="pure-menu-link">Millie the Microbe</a></li> -->
-              </ul>
+<!--               </ul>
             </div>
           </div>
         </div>
-      </div>
+      </div> --> 
       <!-- Non-mobile about -->
       <div class="pure-g">
         <div id="top" class="pure-u-1">
-          <div id="about">
-            <img id="photo" src="files/mugshot_300.JPG" alt="soot"/>
-            <div id="description">
+          <div id="about" class="pure-g">
+            <div class="pure-u-1 pure-u-md-1-4" id="photo">
+              <img src="files/headshot_300.JPG" alt="soot"/>
+              <a href="files/Resume_MaevaFincker_Aug2019_noNum.pdf">Resume</a>
+              <a href="https://www.linkedin.com/in/maeva-fincker-91568563/">LinkedIn</a>
+              <a href="https://github.com/mfincker">GitHub</a>
+            </div>
+            <div id="description" class="pure-u-1 pure-u-md-3-4">
               <h1>Welcome, I'm Maeva. </h1>
               <p>
-                I am a PhD student in <a href="#">Alfred Spormann's lab</a> at <a href="https://stanford.edu/">Stanford University</a>. My research focuses on the metabolism of slow-growing model microorganisms, in order to better understand how deep-subsurface organisms can live for hundreds to thousands of years.
+                I am a PhD candidate in <a href="#">Alfred Spormann's lab</a> at <a href="https://stanford.edu/">Stanford University</a>. My research focuses on the metabolism of slow-growing microorganisms, in order to better understand how deep-subsurface microorganisms can live for hundreds to thousands of years.
                 <!-- Learn more about my research <a href="#" class="internal-link">here -->
                 <!-- </a>. -->
               </p>
               <p>
-                When I am not running experiments in the lab, I am exploring old and new datasets, and designing visualisations. Have a look at the <a href="#" class="internal-link">projects</a> I've worked on.
+                When I am not running experiments in the lab or analyzing genomic data, I am exploring, analyzing or visualizing  old and new datasets. Have a look at some of my <a href="#projects" class="internal-link">projects</a> below.
               </p>
               <p>
-                Before joining the Spormann lab, I graduated from the <a href="http://www.centralesupelec.fr/">Ecole Centrale Paris</a>, one of the top French Engineering School, in 2012, and obtained a M.S in Environmental Engineering from <a href="https://cee.stanford.edu/">Stanford University</a> in 2013.
+                Before joining the Spormann lab, I graduated from the <a href="http://www.centralesupelec.fr/">Ecole Centrale Paris</a>, one of the top French Engineering School, in 2012, and obtained a M.S. in Environmental Engineering from <a href="https://cee.stanford.edu/">Stanford University</a> in 2013.
               </p>
+
+              <h1>Projects</h1>
+
+              <div id ="projects" class="pure-g">
+            <div class="project pure-u-1 pure-u-sm-1-3">
+              <div class="div-95">
+              <h3>Interactive map of California</h3>
+              
+               <a href="#"><img src="files/cal_map.jpg" alt="california_map" class="vignette"></a>
+                <p>Switch between population density or ethnicity at different administrative level based on zoom.</p>
+                <p><a href="#">Live map</a> - <a href="#">Github</a></p>
+                </div>
+            </div>
+
+            <div class="project pure-u-1 pure-u-sm-1-3">
+              <div class="div-95">
+              <h3>Step-by-step tutorial to build an interactive map</h3>
+              <a href="#"><img src="files/interactive_map.jpg" alt="interactive_map" class="vignette"></a>
+              <p>Follow this tutorial to build your own interactive map with MapBox GL.</p>
+              <p><a href="#">Start here</a> - <a href="#">Github</a></p>
+              </div>
+            </div> 
+
+            <div class="project pure-u-1 pure-u-sm-1-3">
+              <div class="div-95">
+              <h3>Predicting bacterial growth rate from functional genes</h3>
+              <a href="#"><img src="files/growth_rate.jpg" alt="growth_rate_pca" class="vignette"></a>
+              <p>Use the presence of functional genes to estimate how fast a microorganism grows.</p>
+              <p><a href="#">Poster</a> - <a href="#">Github</a></p>
+              </div>
+            </div>  
+
+            <div class="project pure-u-1 pure-u-sm-1-3">
+              <div class="div-95">
+              <h3>Predicting readmision to the ER within 48h of discharge with EHR data</h3>
+              <a href="#"><img src="files/ehr_model.jpg" alt="EHR_RNN" class="vignette"></a>
+              <p>Train and compare the accuracy of dense neural networks, recurrent neural networks and traditional classifiers on this task.</p>
+              <p><a href="#">Poster</a> - <a href="#">Github</a></p>
+
+              </div>
+            </div>
+            
+            <div class="project pure-u-1 pure-u-sm-1-3">
+              <div class="div-95">
+              <h3>Visualizing the link between operon structure and sequence similarity for different classes of enzymes</h3>
+              <a href="#"><img src="files/operon_heatmap.jpg" alt="operon_heatmap" class="vignette"></a>
+              <p>Investigate the link between the operon structure and sequence similarity of formate dehydrogenases and methylenetetrahydrofolate reductases.</p>
+              <p><a href="#">Try it</a> - <a href="#">Github</a></p>
+              </div>
+            </div>           
+
+          </div>
             </div>
           </div>
-        </div>
-      </div>
-      <footer >
-        <div id="bottom" >
-          <p>&copy; 2017, Maeva Fincker</p>
-          <ul>
+
+          
+          </div>
+
+        <div id="bottom" class="pure-u-1">
+          <p>&copy; Maeva Fincker, 2019</p>
+          <!-- <ul> -->
 <!--             <li><a href="#">LinkedIn</a></li>
             <li><a href="#">Twitter</a></li> -->
-            <li><a href="https://github.com/mfincker">Github</a></li>
-          </ul>
+            <!-- <li><a href="https://github.com/mfincker">Github</a></li> -->
+          <!-- </ul> -->
         </div>
-      </footer>
+
+
+        </div>
+      </div>
+
     </div>
     <script src="main.js"></script>
   </body>
